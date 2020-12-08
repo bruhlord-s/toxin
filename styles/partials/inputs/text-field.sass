@@ -1,8 +1,20 @@
 .text-field
-    background: #ffffff
+    background: #ffffff    
+    color: rgba(31, 32, 65, 0.75)
     border: 1px solid rgba(31, 32, 65, 0.25)
     border-radius: 4px
-    padding: 13px 265px 13px 15px
-    color: rgba(31, 32, 65, 0.25)
+    padding: 13px 15px 13px 15px
+    width: 320px
     font-size: 14px
     line-height: 18px
+    
+.text-field::-webkit-input-placeholder 
+    color: rgba(31, 32, 65, 0.25)
+.text-field::-moz-placeholder          
+    color: rgba(31, 32, 65, 0.25) /* Firefox 19+ */
+.text-field:-moz-placeholder           
+    color: rgba(31, 32, 65, 0.25) /* Firefox 18- */
+    
+.text-field:focus, .text-field:not(:focus):valid, .text-field:hover
+    outline: none
+    border: 1px solid rgba(31, 32, 65, 0.5)

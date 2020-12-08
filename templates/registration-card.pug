@@ -1,0 +1,6 @@
+include ../templates/text-field.pug
+
+.reg-card.card
+    h1.h1.dark-100.reg-card__title Регистрация аккаунта
+    +textField('', 'Имя')(class='reg-card__name-field')
+    +textField('', 'Фамилия')(class='reg-card__surname-field')

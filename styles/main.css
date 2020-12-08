@@ -57,12 +57,40 @@
 
 .text-field {
   background: #ffffff;
+  color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
-  padding: 13px 265px 13px 15px;
-  color: rgba(31, 32, 65, 0.25);
+  padding: 13px 15px 13px 15px;
+  width: 320px;
   font-size: 14px;
   line-height: 18px;
+}
+
+.text-field::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.text-field::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.text-field:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.text-field:focus, .text-field:not(:focus):valid, .text-field:hover {
+  outline: none;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.card {
+  width: fit-content;
+  padding: 40px 30px 30px 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=main.css.map */
