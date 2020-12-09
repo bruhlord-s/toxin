@@ -4,7 +4,7 @@
   font-weight: 700;
 }
 
-.text {
+*, .text {
   font-family: "Conv_Montserrat-Regular";
   font-size: 14px;
   font-weight: 400;
@@ -57,13 +57,92 @@
 
 .text-field {
   background: #ffffff;
+  color: rgba(31, 32, 65, 0.75);
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
-  padding: 13px 265px 13px 15px;
-  color: rgba(31, 32, 65, 0.25);
+  padding: 13px 15px 13px 15px;
+  width: 320px;
   font-size: 14px;
   line-height: 18px;
 }
 
+.text-field::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.text-field::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.text-field:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.text-field:focus, .text-field:not(:focus):valid, .text-field:hover {
+  outline: none;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.card {
+  width: fit-content;
+  padding: 40px 30px 30px 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.radio + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+
+.radio + label:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #FFF;
+  width: 20px;
+  height: 20px;
+}
+
+.radio + label:after {
+  content: "";
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: #000;
+  opacity: 0;
+  top: 3px;
+  left: 3px;
+}
+
+.radio:checked + label:after {
+  opacity: 1;
+}
+
+.link {
+  color: #BC9CFF;
+  text-decoration: none;
+}
+
+.link--disabled {
+  color: rgba(31, 32, 65, 0.5);
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=main.css.map */
-</style></head><body><h1 class="dark-100 h1">Темный на 100</h1><h1 class="dark-75 h1">Темный на 75</h1><h1 class="dark-50 h1">Темный на 50</h1><h1 class="dark-2 h1">Темный на 5</h1><h1 class="green h1">Зеленый</h1><h1 class="h1 dark-100">This one is the sub-section or widget title</h1><h2 class="h2 dark-100">Next one is the item title inside widgets</h2><h3 class="h3 dark-100">This is a label or CTA text</h3><p class="text dark-75">This is the body text which is used for most of the design, like paragraphs, lists, etc.</p><input class="text-field" type="text" placeholder="Email"/></body></html>
+</style></head><body><h1 class="dark-100 h1">Темный на 100</h1><h1 class="dark-75 h1">Темный на 75</h1><h1 class="dark-50 h1">Темный на 50</h1><h1 class="dark-2 h1">Темный на 5</h1><h1 class="green h1">Зеленый</h1><h1 class="h1 dark-100">This one is the sub-section or widget title</h1><h2 class="h2 dark-100">Next one is the item title inside widgets</h2><h3 class="h3 dark-100">This is a label or CTA text</h3><p class="text dark-75">This is the body text which is used for most of the design, like paragraphs, lists, etc.</p><a class="link h3" href="#">click me</a><a class="link--disabled h3" href="#">click me</a><div class="reg-card card"><h1 class="h1 dark-100 reg-card__title">Регистрация аккаунта</h1><h3 class="h3 dark-100 textField__title"></h3><input class="text-field" type="text" placeholder="Имя" required="required"/><h3 class="h3 dark-100 textField__title"></h3><input class="text-field" type="text" placeholder="Фамилия" required="required"/><input class="radio" type="radio" id="id"/><label for="radio">Мужчина</label><input class="radio" type="radio" id="id"/><label for="radio">Женщина</label></div></body></html>
